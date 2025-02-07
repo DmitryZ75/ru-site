@@ -1,63 +1,178 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
-    ym(89109736, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true
-    });
- </script>
+<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XmoIPa7ldamZ5U7FDthqjGRWrF-Zqj8gVtBKx7hakRDrW54iO10P9UJzkLvnUJdT" charset="UTF-8"></script><script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(89109736, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
 
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Дмитрий Жагрин</title>
-<style>
-  body {
-    font-family: Calibri, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-  }
-  h1, h2, h3 {
-    margin-bottom: 10px;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  .email-link {
-    display: block;
-    margin-top: 20px;
-    color: blue;
-  }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий Жагрин - IT Specialist</title>
+
+    <!-- Подключаем Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Подключаем GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Контейнер */
+        .container {
+            text-align: center;
+            opacity: 0;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        /* Описание */
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            opacity: 0.9;
+            margin: 0 auto 30px;
+        }
+
+        /* Разделы */
+        .section {
+            margin-top: 30px;
+        }
+
+        /* Карточки */
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+            text-align: left;
+            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s ease;
+            opacity: 0;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+            box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .card h2 {
+            color: #007BFF;
+            font-size: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        /* Кнопка */
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+        .contact-btn:hover {
+            background: #0056b3;
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+        }
+
+    </style>
 </head>
 <body>
-<h1>Дмитрий Жагрин</h1>
-<p>Опытный ИТ-специалист с более чем 20-летним подтвержденным опытом в различных областях информационных технологий, включая поддержку, разработку, обеспечение непрерывности бизнеса, безопасность, риск-менеджмент и управление затратами. Демонстрировал успех в использовании разнообразного стека технологий для обеспечения эффективности и надежности ИТ-инфраструктуры.</p>
 
-<h2>Основные навыки:</h2>
-<ul>
-  <li><strong>Операционные системы и платформы:</strong> Владение операционными системами Windows и Linux, а также опыт работы с облачными платформами Microsoft Azure, AWS и Yandex.Cloud. Значительный опыт работы с Active Directory для управления и аутентификации пользователей, а также внедрения облачных решений Microsoft 365.</li>
-  
-  <li><strong>Бизнес-континуитет и безопасность:</strong> Глубокие знания в обеспечении непрерывности бизнеса (BCP) и восстановлении после катастроф (DR), включая разработку и тестирование планов аварийного восстановления. Опыт в обеспечении информационной безопасности с применением стандартов и методов, таких как ITIL и Information Security. Знакомство с системами мониторинга и защиты, такими как Chekpoint.</li>
-  
-  <li><strong>Сетевые технологии:</strong> Уверенное владение сетевыми технологиями, включая настройку и обслуживание оборудования Cisco и Mikrotik. Опыт работы с VoIP-системами, включая CUCME и Asterisk, для обеспечения коммуникаций в рамках организации.</li>
-  
-  <li><strong>Облачные технологии и разработка:</strong> Опыт работы с облачными платформами AWS и Azure, включая управление инфраструктурой как кодом с использованием Terraform и Git для автоматизации процессов развертывания и конфигурации. Знание Kubernetes для управления контейнеризированными приложениями.</li>
-  
-  <li><strong>Управление и поддержка:</strong> Значительный опыт в управлении ИТ-инфраструктурой, включая управление сервисными запросами и поддержкой пользователей. Опыт работы с системами управления виртуализацией, такими как VmWare, а также инструментами резервного копирования и восстановления данных, такими как Veeam.</li>
-  
-  <li><strong>Коммуникация и сотрудничество:</strong> Опыт работы в командной среде, а также умение эффективно общаться с коллегами и заказчиками. Опыт в работе с коллегами из разных отделов для решения проблем и достижения бизнес-целей. Знание инструментов совместной работы, таких как Microsoft Teams, для эффективного обмена информацией и совместной работы.</li>
-</ul>
+    <!-- Контейнер -->
+    <div class="container">
+        <h1>Дмитрий Жагрин</h1>
+        <p>Опытный ИТ-инженер с более чем 20-летним подтвержденным опытом в различных областях информационных технологий.</p>
 
-<a href="mailto:mail@dmitryz.ru" class="email-link">mail@dmitryz.ru</a>
+        <!-- Блок "Основные навыки" -->
+        <div class="section">
+            <div class="card">
+                <h2>Основные навыки</h2>
+
+                <p><strong>Операционные системы и платформы:</strong> Windows, Linux, Microsoft Azure, AWS, Yandex.Cloud, Active Directory, Microsoft 365.</p>
+
+                <p><strong>Бизнес-континуитет и безопасность:</strong> BCP/DR, ITIL, Information Security, Chekpoint, разработка и тестирование планов аварийного восстановления.</p>
+
+                <p><strong>Сетевые технологии:</strong> Cisco, Mikrotik, VoIP, CUCME, Asterisk.</p>
+
+                <p><strong>Облачные технологии и разработка:</strong> AWS, Azure, Terraform, Git, Kubernetes (k8s).</p>
+
+                <p><strong>Управление и поддержка:</strong> IT management, Helpdesk, VmWare, Veeam, RDS.</p>
+
+                <p><strong>Коммуникация и сотрудничество:</strong> Microsoft Teams, работа в команде, взаимодействие с бизнесом.</p>
+            </div>
+        </div>
+
+        <!-- Блок стека технологий (компактный) -->
+        <div class="section">
+            <div class="card">
+                <h2>Основной стек</h2>
+                <p>Windows, Microsoft 365, Active Directory, Azure, BCP/DR, Cisco, Mikrotik, CUCME, Chekpoint, ITIL, Information Security, AWS, IT management, Helpdesk, Asterisk, RDS, VmWare, Linux, Veeam, Teams, Yandex.Cloud, Kubernetes (k8s), Terraform, Git, LAMP, CCNP, MDM, SAN.</p>
+            </div>
+        </div>
+
+        <!-- Кнопка связи -->
+        <a href="mailto:mail@dmitryz.ru" class="contact-btn">Связаться</a>
+    </div>
+
+    <!-- GSAP-анимация -->
+    <script>
+        gsap.to(".container", { opacity: 1, duration: 1.5, y: -20, ease: "power2.out" });
+        gsap.to(".card", { opacity: 1, duration: 1.5, y: -10, ease: "power2.out", stagger: 0.3 });
+    </script>
+
 </body>
 </html>
